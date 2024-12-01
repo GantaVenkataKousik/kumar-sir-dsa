@@ -1,0 +1,31 @@
+using binary search
+
+--finding first occ
+when found target still moving to left
+--finding last occ
+when found target still moving to right
+
+and you can use just a single function using 
+boolean value
+
+private:
+    int findPosition(vector<int>&nums, int target, bool findFirst){
+        int start=0,end=nums.size()-1,pos=-1;
+        while(start<=end){
+            int mid=start+(end-start)/2;
+            if(nums[mid]==target){
+                pos=mid;
+                if(findFirst){
+                    end=mid-1;
+                }else{
+                    start=mid+1;
+                }
+            }
+            else if(nums[mid]<target){
+                start=mid+1;
+            }else{
+                end=mid-1;
+            }
+        }
+        return pos;
+    }

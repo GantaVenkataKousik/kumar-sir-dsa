@@ -1,0 +1,8 @@
+Storing in an efficient way
+
+--we have an array of integers (elements are repeated)
+--now question is store this in less according to some criteria
+--better
+way is to find frequenccy of each element
+and storing can reduce space and time
+--

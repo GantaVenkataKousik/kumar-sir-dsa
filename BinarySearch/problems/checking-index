@@ -1,0 +1,8 @@
+for a problem 
+given sorted array of 0's and 1's
+
+Here if you just check mid-1 index adn it is 1 
+--then end = mid-1
+
+else 
+simply the current mid index 

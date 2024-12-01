@@ -1,0 +1,17 @@
+--
+if element is found - return the index
+
+--
+chekcing which part we are in
+by
+nums[mid]>=nums[0]
+then 
+got  a clarification that we are in the first increasing part
+then
+  -- comparing like
+     -- target<nums[0] || target>nums[mid] -> move to right = left = mid+1;
+      else -- right = mid-1;
+--
+  --in second increasing part
+      --target <nums[n-1] || target<nums[mid] --> move to left ==> right=mid-1;
+      else -- left=mid+1;
